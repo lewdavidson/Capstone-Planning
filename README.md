@@ -39,7 +39,7 @@ needed information to search and use on the page.
 ---
 
  ## Component Structure:
-
+ See the UI Mockup File.
 
  ___
 
@@ -47,6 +47,10 @@ needed information to search and use on the page.
 
 ```
 I'm adding components that I didn't plan for, mainly for site rendering, and I'm wondering if that is okay and why it wouldn't be okay, It is mainly in order to get the UI looking the way I want it to, but it's a way that could get really tangled if i'm not affecting state through reducers. There will be callbacks everywhere!
+
+I am continuing to make more components than I originally anticipated doing, since log in and sign up have been added. I am thinking that they need to both communicate with firebase and then return the user to some sort of user dashboard from there with all of the desired functionality. Not sure if this is a good idea but its what seems necessary as of right now.
+
+I am thinking about making another component tree map to compare.
 
 
 

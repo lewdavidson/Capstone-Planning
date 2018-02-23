@@ -20,4 +20,9 @@ It is my intention to create a mockup version with sketch that looks more polish
 
 I included a file containing my component tree in sketch. I'm not quite sure if it's the best possible way to structure things, because there are two different versions of the results displays and I don't know if there's a way to dry that up without crossing wires.
 
+#### Here is my original tree:
+
 ![component tree](Component Tree.png)
+
+#### Here is my second tree:
+![second component tree](ComponentTreeTwo.png)
