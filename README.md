@@ -65,6 +65,6 @@ I struggled a bit with conceptualizing how to change a button depending on which
 
 [x] Create mock-up of that UI, thinking about routes to use and where and what will appear on which pages.
 
-[ ] Draw out component structure based on UI mock-up
+[x] Draw out component structure based on UI mock-up
 
-[ ] Add mockup and component tree to planning repo
+[x] Add mockup and component tree to planning repo
