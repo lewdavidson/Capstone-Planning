@@ -46,20 +46,17 @@ needed information to search and use on the page.
  ### Notes:
 
 ```
-Originally had my router in App which made the Body component useless! I created the body component for styling purposes originally and wanted to keep it, so I ended up having to move my router into body instead.
+I'm adding components that I didn't plan for, mainly for site rendering, and I'm wondering if that is okay and why it wouldn't be okay, It is mainly in order to get the UI looking the way I want it to, but it's a way that could get really tangled if i'm not affecting state through reducers. There will be callbacks everywhere!
 
-I tried to keep all of my inventory data in a separate component and import it into any component that needed it (which I still think is the way to go) but it wasn't working correctly and I couldn't get them to talk to each other, so I moved my data into the Display component and it works fine.
- EDIT: I ended up figuring out how to store my inventory object in another separate data file!
 
-I struggled a bit with conceptualizing how to change a button depending on which area of the page you are on, but ended up messing with the props to get them to behave!
 
 ```
 
- ### To-Do:
+### To-Do:
 
- [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
+ Using the [Thinking in React](https://reactjs.org/docs/thinking-in-react.html) article, begin building the site using these steps:
 
- ### Break UI into a component hierarchy
+### Break UI into a component hierarchy
 
 [x] Build a plan for UI, what it will do, how it will look. "What do I want my user experience to feel like?"
 
@@ -68,3 +65,29 @@ I struggled a bit with conceptualizing how to change a button depending on which
 [x] Draw out component structure based on UI mock-up
 
 [x] Add mockup and component tree to planning repo
+
+### Build A Static Version
+
+[ ] Using component Structure, build out a static version of the site. (Hard code anything coming in from outside sources).
+
+[ ] Add link to static site's repo to this planning document
+
+### Identify minimum complete representation of UI state
+
+[ ] Consider how state will be organized
+
+[ ] Outline any state slices needed and how they will be structured
+
+[ ] Add a list of state slices this site requires AND how they will be structured to this document.
+
+### Identify where state should live (lift state)
+
+[ ] Determine WHERE state needs to live
+
+[ ] Add a section to this document detailing where state will be lifted to.
+
+[ ] Refactor existing components to include state and state values (don't worry about redux quite yet). Basically add state to the site.
+
+### Inverse Data Flow
+
+[ ] Integrate all backend logic into the UI (there will be considerably more detailed steps to this process)
