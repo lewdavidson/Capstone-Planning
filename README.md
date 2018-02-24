@@ -52,6 +52,8 @@ I am continuing to make more components than I originally anticipated doing, sin
 
 I am thinking about making another component tree map to compare.
 
+At about 4pm, I went back over my work and took my components one by one, testing to make sure they routed to where I wanted them too and were located where I wanted them to route. I just have to work on the individual item display so that it grabs the id of the item clicked on, and displays all if that items details.
+
 
 
 ```
