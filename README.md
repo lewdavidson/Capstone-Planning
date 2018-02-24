@@ -1,8 +1,9 @@
 ## Peachy - a vegan recipe resource
 ##### by Lew Davidson
 
+[Link to the Static Project's repo](https://github.com/lewdavidson/Peachy.git)
 
-* Project Description:
+### Project Description:
 
 > A vegan recipe website that allows users to create an account, search vegan recipes, save them and share them across social media.
 
@@ -76,7 +77,7 @@ At about 4pm, I went back over my work and took my components one by one, testin
 
 [ ] Using component Structure, build out a static version of the site. (Hard code anything coming in from outside sources).
 
-[ ] Add link to static site's repo to this planning document
+[x] Add link to static site's repo to this planning document
 
 ### Identify minimum complete representation of UI state
 
