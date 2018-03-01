@@ -22,7 +22,7 @@ I included a file containing my component tree in sketch. I'm not quite sure if 
 
 #### Here is my original tree:
 
-![component tree](Component Tree.png)
+![component tree](Static-Map.png)
 
 #### Here is my second tree:
 ![second component tree](ComponentTreeTwo.png)
