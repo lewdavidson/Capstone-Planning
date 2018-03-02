@@ -67,7 +67,7 @@ Shrikhand and Raleway
 ```
 
 ###State Slices/Structure:
-There need to be a few state slices in order for my app to work. I am thinking that every recipe needs a unique id and needs to be nested inside a recipes object, a current recipe id in order to show individual recipes at a time, and a current user id slice which is originally set to null and then changed if a user is logged in.
+There need to be a few state slices in order for my app to work. I am thinking that every recipe needs a unique id and needs to be nested inside a recipes object, a current recipe id in order to show individual recipes at a time, and a current user id slice which is originally set to null and then changed if a user is logged in. SavedRecipes slice, holds all recipes that isSaved = true. Is this a good state slice? or can it live somewhere else?
 
 initialState = {
   currentUserId: null,
@@ -81,8 +81,18 @@ initialState = {
       recipeId: 1,
       isSaved: null
     }
-  }
+  },
+  savedRecipes: {}
 };
+
+If currentUserId is not null, redirect to user dash.
+If currentUserId is null, redirect to main page.
+
+No matter what UserId is, display recipes 1-10 on either user dash or main page on search.
+
+If currentUserId is not null and save button is clicked, isSaved flips to true.
+If isSaved is true, put into savedRecipes, display those recipe ids on the saved page.
+If save button is pressed again, isSaved is null, remove from savedRecipes.
 
 
 ### To-Do:
@@ -107,11 +117,11 @@ initialState = {
 
 ### Identify minimum complete representation of UI state
 
-[ ] Consider how state will be organized
+[x] Consider how state will be organized
 
-[ ] Outline any state slices needed and how they will be structured
+[x] Outline any state slices needed and how they will be structured
 
-[ ] Add a list of state slices this site requires AND how they will be structured to this document.
+[x] Add a list of state slices this site requires AND how they will be structured to this document.
 
 ### Identify where state should live (lift state)
 
