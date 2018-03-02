@@ -72,22 +72,23 @@ ___
 
 There need to be a few state slices in order for my app to work. I am thinking that every recipe needs a unique id and needs to be nested inside a recipes object, a current recipe id in order to show individual recipes at a time, and a current user id slice which is originally set to null and then changed if a user is logged in. SavedRecipes slice, holds all recipes that isSaved = true. Is this a good state slice? or can it live somewhere else?
 
-initialState = {   
-  currentUserId: null,  
-  currentRecipeId: 1,  
-  recipesById: {
-
-    1: {
-      title: 'title',
-      image: 'image',
-      ingredients: ['ingredients'],
-      link: 'link',
-      recipeId: 1,
-      isSaved: null
-    }
+initialState = {  
+  user: {  
+    currentUserId: null,    
+    savedRecipes: {}  
   },  
-  savedRecipes: {}  
-  };
+  currentRecipeId: 1,  
+  recipesById: {  
+    1: {  
+    title: 'title',  
+      image: 'image',  
+      ingredients: ['ingredients'],  
+      link: 'link',  
+      recipeId: 1,  
+      isSaved: null  
+    }  
+  }   
+};
 
 #### State flow:
 If currentUserId is not null, redirect to user dash.
@@ -101,6 +102,14 @@ If isSaved is true, put into savedRecipes, display those recipe ids on the saved
 
 If save button is pressed again, isSaved is null, remove from savedRecipes.
 
+#### Lifting State:
+
+I have determined that State needs to live in the HomeView component. This is where the user reaches a "fork in the road", either log in/ sign up or proceed to search as a guest. Home view is the closest common parent to those two "forks" and therefore should be my stateful component.
+
+
+### Data Flow Map:
+
+![data map](DataFlow.jpg)
 ___
 
 ### To-Do:
@@ -133,9 +142,9 @@ ___
 
 ### Identify where state should live (lift state)
 
-[ ] Determine WHERE state needs to live
+[x] Determine WHERE state needs to live
 
-[ ] Add a section to this document detailing where state will be lifted to.
+[x] Add a section to this document detailing where state will be lifted to.
 
 [ ] Refactor existing components to include state and state values (don't worry about redux quite yet). Basically add state to the site.
 
