@@ -44,7 +44,7 @@ needed information to search and use on the page.
 
  ___
 
- ### Notes:
+### Notes:
 
 ```
 I'm adding components that I didn't plan for, mainly for site rendering, and I'm wondering if that is okay and why it wouldn't be okay, It is mainly in order to get the UI looking the way I want it to, but it's a way that could get really tangled if i'm not affecting state through reducers. There will be callbacks everywhere!
@@ -64,8 +64,26 @@ Favorable pairings:
 Coiny and Quicksand
 Comfortaa and Ubuntu
 Shrikhand and Raleway
-
 ```
+
+###State Slices/Structure:
+There need to be a few state slices in order for my app to work. I am thinking that every recipe needs a unique id and needs to be nested inside a recipes object, a current recipe id in order to show individual recipes at a time, and a current user id slice which is originally set to null and then changed if a user is logged in.
+
+initialState = {
+  currentUserId: null,
+  currentRecipeId: 1,
+  recipesById: {
+    1: {
+      title: 'title',
+      image: 'image',
+      ingredients: ['ingredients'],
+      link: 'link',
+      recipeId: 1,
+      isSaved: null
+    }
+  }
+};
+
 
 ### To-Do:
 
