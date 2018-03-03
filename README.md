@@ -146,7 +146,9 @@ ___
 
 [x] Add a section to this document detailing where state will be lifted to.
 
-[ ] Refactor existing components to include state and state values (don't worry about redux quite yet). Basically add state to the site.
+[x] Refactor existing components to include state and state values (don't worry about redux quite yet). Basically add state to the site.
+
+oops added redux store instead
 
 ### Inverse Data Flow
 
